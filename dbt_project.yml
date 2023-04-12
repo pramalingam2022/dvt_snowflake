@@ -48,6 +48,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 vars:
   load_date: '1992-01-08'
   tpch_size: 1 #1, 10, 100, 1000, 10000
+  enable_ghost_records: true
+  system_record_value: 'DBTVAULT_SYSTEM'
 
 models:
   dvt_snowflake:

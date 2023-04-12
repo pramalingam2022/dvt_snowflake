@@ -18,7 +18,6 @@ hashed_columns:
       - 'CUSTOMER_MKTSEGMENT'
       - 'CUSTOMER_COMMENT'
       - 'CUSTOMER_TIER'
-      - 'SRC_TIMESTAMP'
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}
