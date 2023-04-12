@@ -1,0 +1,1 @@
+select * from {{ source('tpch_sample', 'strm_raw_customer') }}
