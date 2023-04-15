@@ -14,4 +14,4 @@ sources:
       - name: NATION
       - name: REGION
       - name: CUSTOMER_SCD2
-      - name: strm_raw_customer
+      # - name: strm_raw_customer

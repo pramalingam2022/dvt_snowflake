@@ -1,7 +1,4 @@
-{{ config(
-    pre_hook="CREATE or replace STREAM strm_raw_customer ON view raw_customer SHOW_INITIAL_ROWS = TRUE"
-) }}
 
-select * from {{ source('tpch_sample', 'strm_raw_customer') }}
+select * from {{ref('raw_customer')}} limit 10
 
--- This is a test
+-- this is a test
