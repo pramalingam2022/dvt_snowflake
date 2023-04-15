@@ -1,4 +1,4 @@
- {{ config(materialized='incremental',schema='TPCH_SF134') }}
+ {{ config(materialized='incremental',schema='TPCH_SF1') }}
 
 SELECT
     b.O_ORDERKEY AS ORDER_ID,
