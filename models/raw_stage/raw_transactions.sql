@@ -1,3 +1,5 @@
+ {{ config(materialized='incremental',schema='TPCH_SF12') }}
+
 SELECT
     b.O_ORDERKEY AS ORDER_ID,
     b.O_CUSTKEY AS CUSTOMER_ID,
