@@ -1,4 +1,4 @@
- {{ config(materialized='incremental',schema='TPCH_SF134') }}
+ {{ config(materialized='incremental',schema='TPCH_SF1') }}
 
 SELECT
     b.O_ORDERKEY AS ORDER_ID,
@@ -6,7 +6,7 @@ SELECT
     b.O_ORDERDATE AS ORDER_DATE,
     DATEADD(DAY, 20, b.O_ORDERDATE) AS TRANSACTION_DATE,
     TO_NUMBER(RPAD(CONCAT(b.O_ORDERKEY, b.O_CUSTKEY, TO_CHAR(b.O_ORDERDATE, 'YYYYMMDD')),  24, '0')) AS TRANSACTION_NUMBER,
-    b.O_TOTALPRICE AS AMOUNT,
+    b.zO_TOTALPRICE AS AMOUNT,
     CAST(
     CASE ABS(MOD(RANDOM(1), 2)) + 1
         WHEN 1 THEN 'DR'
