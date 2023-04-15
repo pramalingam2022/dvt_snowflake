@@ -3,5 +3,3 @@
 ) }}
 
 select * from {{ source('tpch_sample', 'strm_raw_customer') }}
-
--- This is a test
