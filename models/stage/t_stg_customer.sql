@@ -1,7 +1,6 @@
 {%- set yaml_metadata -%}
 source_model: 'v_strm_raw_customer'
 derived_columns:
-  CUSTOMER_KEY: 'CUSTOMER_KEY'
   RECORD_SOURCE: '!TPCH-CUSTOMER'
   SATELLITE_NAME_1: '!SAT_CUST_DETAILS'
   SRC_TIMESTAMP: 'SRC_TIMESTAMP'
