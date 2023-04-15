@@ -1,4 +1,4 @@
 
-select * from {{ source('tpch_sample', 'CUSTOMER') }} limit 10
+select * from {{ref('raw_customer')}} limit 10
 
 -- this is a test
