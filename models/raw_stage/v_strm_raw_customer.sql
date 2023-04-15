@@ -1,2 +1,2 @@
 
-select * from {{ source('tpch_sample', 'CUSTOMER') }}
+select * from {{ source('tpch_sample', 'CUSTOMER') }} limit 10
