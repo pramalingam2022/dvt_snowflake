@@ -23,8 +23,8 @@
     {% set sql %}
         DROP SCHEMA IF EXISTS slim_ci_run;
     {% endset %}
-    {% do log("Dropping database 'slim_ci_run'", info=True) %}
+    {% do log("Dropping Schema 'slim_ci_run'", info=True) %}
     {% do run_query(sql) %}
-    {% do log("Databse dropped", info=True) %}
+    {% do log("Schema dropped", info=True) %}
 {%- endmacro -%}
 
