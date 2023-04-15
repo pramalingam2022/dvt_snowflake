@@ -1,4 +1,4 @@
- {{ config(materialized='incremental') }}
+ {{ config(materialized='incremental',schema='TPCH_SF1') }}
 
 {%- set source_model = "t_stg_customer" -%}
 {%- set src_pk = "CUSTOMER_HK" -%}
