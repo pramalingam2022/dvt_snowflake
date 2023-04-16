@@ -1,4 +1,5 @@
 dvtlearn:
+  target: dev
   outputs:
     dev:
       account: chjbtkp-rn03283
@@ -10,4 +11,3 @@ dvtlearn:
       type: snowflake
       user: praveenawsusohio
       warehouse: COMPUTE_WH
-  target: dev
