@@ -14,7 +14,8 @@ jobs:
       matrix:
         os: ['ubuntu-latest']
         python-version: [3.8]
-
+    env:
+      DBT_PROFILES_DIR: .
     # Set environment variables used throughout workflow
 
     steps:
