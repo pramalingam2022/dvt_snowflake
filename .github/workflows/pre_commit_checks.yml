@@ -1,6 +1,9 @@
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+name: pre-commit-check
+run-name: ${{ github.actor }} is executing pre-commit-check 🚀
+on:
+  pull_request:
+    branches: 
+      - dev
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
