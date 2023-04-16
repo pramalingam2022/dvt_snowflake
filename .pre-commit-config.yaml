@@ -3,4 +3,4 @@ repos:
   rev: v1.1.0
   hooks:
   - id: dbt-compile
-    args: ["--cmd-flags", "++profiles-dir", "."]
+    args: ["--cmd-flags"]
