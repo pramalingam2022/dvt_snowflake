@@ -50,8 +50,10 @@ vars:
   tpch_size: 1 #1, 10, 100, 1000, 10000
   enable_ghost_records: true
   system_record_value: 'DBTVAULT_SYSTEM'
+  dbt_constraints_enabled: true
 
 models:
+  +transient: false
   dvt_snowflake:
     raw_stage:
       tags:

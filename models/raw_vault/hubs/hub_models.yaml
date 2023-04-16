@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: hub_cust
+    description: Hub Customers  
+    columns:
+      - name: CUSTOMER_HK
+        tests:
+          - unique
+          - not_null
+      - name: RECORD_SOURCE
+        tests:
+          - accepted_values:
+              values: ['TPCH-CUSTOMER']
