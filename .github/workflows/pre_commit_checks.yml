@@ -5,20 +5,21 @@ on:
     branches: 
       - dev
 
+env:
+  DBT_PROFILES_DIR: ./
+  DBT_SNOWFLAKE_USERNAME: "praveenawsusohio"
+  DBT_SNOWFLAKE_PW: gK43FL*Wxk6xN3zL
+  DBT_SNOWFLAKE_ROLE: "accountadmin"
+
 jobs:
-  pre-commit:
-  runs-on: ubuntu-latest
-  steps:
-  - uses: actions/checkout@v2
-    with:
-      ref: feat/fmmis-001
-  - uses: actions/setup-python@v2
-  - id: file_changes
-    uses: trilom/file-changes-action@v1.2.4
-    with:
-      output: ' '
-  - uses: dbt-checkpoint/dbt-checkpoint@v1.1.0
-    env:
-      DB_PASSWORD: gK43FL*Wxk6xN3zL
-    with:
-      args: run --files ${{ steps.file_changes.outputs.files}}
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        ref: feat/fmmis-001
+    - uses: actions/setup-python@v1
+      with:
+        python-version: "3.7.x"
+
