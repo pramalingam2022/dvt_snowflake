@@ -1,0 +1,13 @@
+dvtlearn:
+  outputs:
+    dev:
+      account: chjbtkp-rn03283
+      database: TEMP
+      password: gK43FL*Wxk6xN3zL
+      role: accountadmin
+      schema: PUBLIC
+      threads: 1
+      type: snowflake
+      user: praveenawsusohio
+      warehouse: COMPUTE_WH
+  target: dev
