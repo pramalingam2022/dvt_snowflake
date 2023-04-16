@@ -17,8 +17,10 @@ jobs:
 
     # Set environment variables used throughout workflow
     env:
-      DBT_PROFILES_DIR: .
-      DB_PASSWORD: gK43FL*Wxk6xN3zL
+      DBT_PROFILES_DIR: ./
+      DBT_SNOWFLAKE_USERNAME: praveenawsusohio
+      DBT_SNOWFLAKE_PW: gK43FL*Wxk6xN3zL
+      DBT_SNOWFLAKE_ROLE: accountadmin
 
     steps:
 
