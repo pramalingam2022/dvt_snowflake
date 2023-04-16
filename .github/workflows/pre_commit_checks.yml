@@ -62,4 +62,5 @@ jobs:
     - name: Run pre-commit
       shell: bash -l {0}
       run: |
+        export DBT_PROFILES_DIR=./
         pre-commit run --files ${{ steps.get_files_to_lint.outputs.files }}
