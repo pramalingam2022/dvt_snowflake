@@ -61,7 +61,5 @@ jobs:
     - name: Run pre-commit
       shell: bash -l {0}
       run: |
-        dbt debug --config-dir
-        pwd
-        ls .
+        dbt deps
         pre-commit run --files ${{ steps.get_files_to_lint.outputs.files }}
