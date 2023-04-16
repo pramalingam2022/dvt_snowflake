@@ -61,6 +61,6 @@ jobs:
       shell: bash -l {0}
       run: |
         dbt debug --config-dir
-        export DBT_PROFILES_DIR=./
+        export DBT_PROFILES_DIR=.
         dbt debug --config-dir
         pre-commit run --files ${{ steps.get_files_to_lint.outputs.files }}
