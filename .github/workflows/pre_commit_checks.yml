@@ -16,6 +16,8 @@ jobs:
         python-version: [3.8]
 
     # Set environment variables used throughout workflow
+    env:
+      DBT_PROFILES_DIR: ./
 
     steps:
     - uses: actions/checkout@v3
