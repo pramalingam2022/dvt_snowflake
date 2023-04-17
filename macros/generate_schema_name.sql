@@ -3,9 +3,9 @@
 {% macro generate_schema_name(custom_schema_name, node) -%}
 
     {%- set default_schema = target.schema -%}
-    {%- if target.name == 'slim_ci_run' -%}
+    {%- if default_schema.startswith('DBT_CLOUD_PR_') -%}
 
-        {{ target.name }}
+        {{ default_schema }}
     
     {%- elif custom_schema_name is none -%}
 
