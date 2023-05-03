@@ -15,7 +15,8 @@ jobs:
         os: ['ubuntu-latest']
         python-version: [3.8]
     env:
-      DBT_PROFILES_DIR: ~/.dbt/
+      DBT_PROFILES_DIR: .
+      # DBT_PROFILES_DIR: ~/.dbt/
     # Set environment variables used throughout workflow
 
     steps:
