@@ -1,9 +1,9 @@
 name: pre-commit
 
-on:
-  pull_request:
-    branches: 
-      - dev
+# on:
+#   pull_request:
+#     branches: 
+#       - dev
 
 jobs:
   pre-commit-pip:
